@@ -1,4 +1,4 @@
-<div class="container px-4 py-5" id="custom-cards">
+<div class="container px-4 py-5" id="projects">
   <h2 class="pb-2 border-bottom section-head">Projects</h2>
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -6,7 +6,7 @@
       <div class="card shadow-sm">
         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
             <image *ngIf="isPhotoValid(project.photo); else altAsThumbnail"
-            [attr.href]="project.photo" height="200" width="200"/>
+            [attr.href]="project.photo" height="200" width="350"/>
             <ng-template #altAsThumbnail>
               <text x="50%" y="50%" fill="#eceeef" dy=".3em">No Image</text>
             </ng-template>
