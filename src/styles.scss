@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+$logo-color-1: #4375ff;
+$logo-color-2: #9e9e9e;
+
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+
+.section-head {
+  font-weight: 500!important;
+  text-transform: uppercase;
+}
