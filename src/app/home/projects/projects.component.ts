@@ -18,5 +18,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<Projects[]>(this.projectsUrl).subscribe((projects: Projects[]) => this.projects = projects);
   }
-
+  isPhotoValid(projectPhoto: any): boolean {
+    return projectPhoto.length !== 0;
+  }
 }
