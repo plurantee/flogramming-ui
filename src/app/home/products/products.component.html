@@ -1,0 +1,23 @@
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom section-head">Products</h2>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div *ngFor="let product of products" class="col">
+      <div class="card shadow-sm">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+            <image *ngIf="isPhotoValid(product.photo); else altAsThumbnail"
+            [attr.href]="product.photo" height="200" width="200"/>
+            <ng-template #altAsThumbnail>
+              <text x="50%" y="50%" fill="#eceeef" dy=".3em">No Image</text>
+            </ng-template>
+
+        </svg>
+
+        <div class="card-body">
+          <p class="card-title">{{product.name}}</p>
+          <p class="card-text">{{product.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

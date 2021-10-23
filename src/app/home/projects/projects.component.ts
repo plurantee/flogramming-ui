@@ -10,7 +10,7 @@ import { Projects } from './projects.model';
 })
 export class ProjectsComponent implements OnInit {
 
-  projectsUrl = 'https://flogramming.herokuapp.com/api/projects'
+  projectsUrl = 'http://data.flogramming.com/api/projects'
   projects: Projects[] = [];
 
   constructor(private http: HttpClient) { }
