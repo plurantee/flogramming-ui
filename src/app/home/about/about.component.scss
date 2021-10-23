@@ -4,7 +4,11 @@
 .cover-blue {
   height: 100%;
 }
-
+.social-link {
+  text-decoration: none;
+  color: $logo-color-1;
+  font-weight: 700;
+}
 .my-image {
   height: 80vh;
   border-radius: 5vh;
