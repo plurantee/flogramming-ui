@@ -10,7 +10,8 @@
     "dev:ssr": "ng run flogramming-ui:serve-ssr",
     "serve:ssr": "node dist/flogramming-ui/server/main.js",
     "build:ssr": "ng build && ng run flogramming-ui:server",
-    "prerender": "ng run flogramming-ui:prerender"
+    "prerender": "ng run flogramming-ui:prerender",
+    "heroku-postbuild": "ng build:ssr --prod"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +28,8 @@
     "express": "^4.15.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.3.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.11",
