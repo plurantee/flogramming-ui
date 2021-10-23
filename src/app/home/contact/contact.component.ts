@@ -9,7 +9,7 @@ import { Attributes, IAttributes } from '../attribute/attributes.model';
 })
 export class ContactComponent implements OnInit {
 
-  attributesUrl = 'http://data.flogramming.com/api/attributes';
+  attributesUrl = 'https://flogramming.herokuapp.com/api/attributes';
   attributeObjects: IAttributes[] = [];
   attributesMap = new Map();
 

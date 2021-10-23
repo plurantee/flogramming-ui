@@ -9,7 +9,7 @@ import { Products } from './products.model';
 })
 export class ProductsComponent implements OnInit {
 
-  projectsUrl = 'http://data.flogramming.com/api/products'
+  projectsUrl = 'https://flogramming.herokuapp.com/api/products'
   products: Products[] = [];
 
   constructor(private http: HttpClient) { }
