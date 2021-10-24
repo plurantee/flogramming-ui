@@ -4,21 +4,45 @@ a {
   color: $logo-color-1!important;
 }
 
-.nav-link {
-  font-size: 1.0rem;
-  padding: 1.3rem 1.5rem;
-  font-weight: 500;
-}
-
 .flogo-text-1 {
   color: $logo-color-1;
 }
-
 .icon-text {
   padding: .7rem 1rem;
   font-weight: 600;
   font-size: 1.5rem;
   color: $logo-color-2;
 }
+
+.nav {
+  transition: all 0.2s ease;
+
+  &-link {
+    font-size: 1.0rem;
+    padding: 1.3rem 1.5rem;
+    font-weight: 500;
+  }
+  &-top {
+    padding-top: 0.5rem;
+    background-color: transparent;
+  }
+  &-scrolled {
+
+    background-color: $black;
+    & .nav-link {
+      padding: .7rem 1rem;
+      font-size: 1rem;
+      color: $logo-color-2;
+      font-weight: 600;
+    }
+    & .icon-text {
+      padding: .7rem 1rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: $logo-color-2;
+    }
+  }
+}
+
 
 
